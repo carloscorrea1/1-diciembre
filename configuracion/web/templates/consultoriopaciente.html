@@ -23,13 +23,16 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3">
 
-                {%for medico in medicos %}
+                {%for paciente in pacientes %}
                    
                     <div class="col">
                             <div class="card h-100 shadow">
-                                 <img src="../static/img/medico.png">
-                                 
-                        <h1>{{medico.nombres}}</h1>
+                                 <img src="../static/img/experiencia-del-paciente-1.jpg">
+                                 <p>NOMBRE: {{paciente.nombre}}</p>
+                                 <p>APELLIDO: {{paciente.apellidos}}</p>
+                                 <p>CEDULA: {{paciente.cedula}}</p>
+
+                        <h1>{{paciente.nombres}}</h1>
                     </div>
                 </div>
 
